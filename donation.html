@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Document</title>
+</head>
+
+<body>
+    <center>
+        <form action="post">
+            <h1>Form to donate for old age home</h1>
+            <div>
+                <label for="name">Enter your Name:-</label>
+                <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+            <BR></BR>
+
+            <div>
+                <label for="gender">Select your Gender:- </label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label>
+
+
+            </div>
+            <BR></BR>
+
+            <div>
+                <label for="roll">Enter your donation amount :-</label>
+                <input type="text" name="roll" placeholder="Enter your donation amount ">
+            </div>
+            <BR></BR>
+
+
+            <div>
+                <label for="dob">Enter your DOB :-</label>
+                <input type="date" pattern="11-11-1111" name="dob" placeholder="dd-mm-yyyy">
+            </div>
+            <BR></BR>
+
+            <div>
+                <label for="password">Enter your password :-</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            </div>
+            <br>
+
+            <div>
+                <label for="edit">What is your income source?</label><br>
+                <input type="checkbox" id="edit1" name="edit" value="yes">
+                <label for="edit1">corporate</label>
+                <input type="checkbox" id="edit2" name="edit" value="yes">
+                <label for="edit2">business</label>
+                <input type="checkbox" id="edit3" name="edit" value="yes">
+                <label for="edit3">others</label>
+            </div>
+            <br>
+            <div>
+                <label for="email">Enter your E-mail :-</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <br>
+
+            <div>
+                <label for="phone">Enter your phone number:-</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+            </div>
+            <br>
+
+            <div>
+                <label for="comments">Why do you want to donate this amount?</label><br>
+                <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Leave your thoughts"></textarea>
+            </div>
+            <label for="know">How do you get to know about this donation?</label>
+            <select name="know" id="know">
+
+                <option value="friends">Friends</option>
+                <option value="family">Family</option>
+                <option value="teachers">others</option>
+            </select>
+            <br>
+            <br>
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </center>
+</body>
+
+</html>
