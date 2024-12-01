@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  },
+  "name": "donation2",
+  "version": "1.0.0",
+  "description": "Our Collection page is designed to make your contributions to the Old Age Fund seamless and secure. Here, you can easily explore various donation options, whether you prefer a one-time gift or a recurring contribution.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
