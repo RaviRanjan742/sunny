@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+</head>
+<body>
+
+    <h1>Form to Donate for Old Age Home</h1>
+
+    <form id="donationForm">
+        <div>
+            <label for="name">Enter your Name:</label>
+            <input type="text" name="name" placeholder="Enter your Name" required>
+        </div>
+        <br>
+
+        <div>
+            <label>Select your Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="others">Others</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="donation_amount">Enter your donation amount:</label>
+            <input type="number" name="donation_amount" placeholder="Enter amount" required>
+        </div>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        // Simple client-side form submission handling
+        const form = document.getElementById("donationForm");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            console.log("Form Submitted:", Object.fromEntries(formData));
+            alert("Thank you for your donation!");
+        });
+    </script>
+</body>
+</html>
